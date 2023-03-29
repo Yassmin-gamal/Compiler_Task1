@@ -10,6 +10,14 @@ public class blockListener extends JavaParserBaseListener{
         this.rewriter = rewriter;
         this.i=0;
     }
+     @Override public void enterCompilationUnit(JavaParser.CompilationUnitContext ctx) {
+        rewriter.insertBefore(ctx.getStart(),"import java.io.*; " + "\n");
+        rewriter.insertBefore(ctx.getStart(),"import java.io.IOException; " + "\n");
+        rewriter.insertBefore(ctx.getStart(),"import java.io.FileWriter; " + "\n");
+        rewriter.insertBefore(ctx.getStart(),"import java.util.Scanner;   " + "\n");
+
+
+    }
 
     @Override public void enterMethodBody(JavaParser.MethodBodyContext ctx) {
         rewriter.insertBefore(ctx.getStart(),"throws IOException ");

@@ -36,12 +36,12 @@
 -Green lines are highlighted for visited lines
 -Orange lines are highlighted for expressions with uncovered branches
 
-##Example
+## Example
 ![image](https://user-images.githubusercontent.com/66218339/233173464-75f2d298-2c29-435e-b4bb-635bfbc796ff.png)
 
-##Example2
+## Example2
 ![image](https://user-images.githubusercontent.com/66218339/233173843-87c566fc-1080-4b5a-9b02-d41989454152.png)
 
-##Example3
+## Example3
 ![image](https://user-images.githubusercontent.com/66218339/233170961-796eb8fb-c27c-440e-80cc-ef15335a0013.png)
 

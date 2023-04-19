@@ -1,10 +1,10 @@
-
 public class main {
 
     public static void main(String[] args) {
-        int x=5;
+        int x=10;
+        int y=6;
         myMethod();
-        if(x==5)
+        if(x==10&&y==6)
             System.out.println(x);
 
         else
@@ -12,7 +12,7 @@ public class main {
 
         for(int i=0;i<x;i++){
         }
-        if(x>5 || x==5)x++;
+        if(x>5 || x==5 || y==6)x++;
         else x--;
         myMethod();
     }
@@ -20,3 +20,4 @@ public class main {
         System.out.println("I just got executed!");
     }
 }
+

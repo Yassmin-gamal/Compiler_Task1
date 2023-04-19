@@ -62,6 +62,13 @@ public class htmListener extends JavaParserBaseListener {//color all green and n
     }
     
     @Override
+    public void visitTerminal(TerminalNode node) {
+    if (node.getText().equals("||") || node.getText().equals("&&")) {
+            exp = true;
+        }
+    }
+    
+    @Override
     public void enterParExpression(JavaParser.ParExpressionContext ctx) {
         exp = true;
         end = c + 1;

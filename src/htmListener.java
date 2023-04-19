@@ -104,9 +104,13 @@ public class htmListener extends JavaParserBaseListener {//color all green and n
             rewriter.insertAfter(ctx.getStop(), "</span>");
         }
     }
-
-
+    
+    @Override
+    public void enterExpression(JavaParser.ExpressionContext ctx) {
+        if (exp && ctx.AND() == null && ctx.OR() == null) {
+            c++;
+            exp = false;
+        }
+    }
 
 }
-
-

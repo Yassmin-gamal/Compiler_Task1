@@ -36,7 +36,7 @@ public class htmListener extends JavaParserBaseListener {//color all green and n
         scanner.reset();
         scanner.close();
 
-        System.out.println(f);
+        //System.out.println(f);
         if(!f){//if block not found in txt file color it red
             rewriter.insertBefore(ctx.getStart(),"<pre style=\"background-color:#C71F1F;\">");
             rewriter.insertAfter(ctx.getStop(),"</pre>\n");
@@ -50,10 +50,8 @@ public class htmListener extends JavaParserBaseListener {//color all green and n
         rewriter.insertBefore(ctx.getStart(),"</head>\n");
         rewriter.insertBefore(ctx.getStart(),"<head>\n");
         rewriter.insertBefore(ctx.getStart(),"<html>\n");
-        rewriter.insertAfter(ctx.getStop(),"</pre>\n");
-        rewriter.insertAfter(ctx.getStop(),"</body>\n");
-        rewriter.insertAfter(ctx.getStop(),"</html>\n");
     }
+    
     @Override
     public void exitCompilationUnit(JavaParser.CompilationUnitContext ctx) {
         rewriter.insertAfter(ctx.getStop(), "</pre>\n");

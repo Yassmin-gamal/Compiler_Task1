@@ -30,3 +30,18 @@
 * This task aims to generate a file clarify the visited blocks of the input. 
 * ![image](https://user-images.githubusercontent.com/66414402/228391819-6a0803de-4b61-42eb-a832-4454c30b980c.png)
 
+# Compiler_Task3
+*The output from task 2 automatically generates an HTML with highlighted red, green, and orange lines:
+-Red lines are highlighted for not visited lines
+-Green lines are highlighted for visited lines
+-Orange lines are highlighted for expressions with uncovered branches
+
+##Example
+![image](https://user-images.githubusercontent.com/66218339/233173464-75f2d298-2c29-435e-b4bb-635bfbc796ff.png)
+
+##Example2
+![image](https://user-images.githubusercontent.com/66218339/233173843-87c566fc-1080-4b5a-9b02-d41989454152.png)
+
+##Example3
+![image](https://user-images.githubusercontent.com/66218339/233170961-796eb8fb-c27c-440e-80cc-ef15335a0013.png)
+
